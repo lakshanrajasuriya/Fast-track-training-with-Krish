@@ -1,0 +1,12 @@
+{
+  "name": "selection-sort",
+  "version": "1.0.0",
+  "description": "Selection Sort Algorithm Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
