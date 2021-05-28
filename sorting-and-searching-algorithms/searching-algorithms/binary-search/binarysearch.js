@@ -17,7 +17,7 @@ const binarySearch = (list, item) => {
         }
     }
 
-    return null //if not found
+    return null //If not found
 }
 
 module.exports = { binarySearch };
