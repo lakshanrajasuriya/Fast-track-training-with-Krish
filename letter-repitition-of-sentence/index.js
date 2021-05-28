@@ -2,5 +2,6 @@ const { letterCount } = require('./wordLib')
 
 const sentence = "Please find it";
 
-// Print letter count
-console.log(letterCount(sentence));
+// Get letter count
+const count = letterCount(sentence);
+console.log(count);
