@@ -2,7 +2,7 @@ const letterCount = (sentence) => {
 
     // Split sentence into letters
     let charArr = sentence.replace(/ /g, '').toLowerCase().split("");
-    var letters = new Map(); // To store letters with count
+    let letters = new Map(); // To store letters with count
 
 
     for (let i = 0; i < charArr.length; i++) {

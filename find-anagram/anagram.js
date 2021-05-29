@@ -5,7 +5,7 @@ const sortText = (text) => {
     for (let i = 0; i < arr.length - 1; i++) {
         for (let j = i + 1; j < arr.length; j++) {
 
-            // check if ascii value is same
+            // Check if ascii value is same
             if (arr[i].charCodeAt(0) > arr[j].charCodeAt(0)) {
 
                 // Swap elements
