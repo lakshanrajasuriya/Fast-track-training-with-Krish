@@ -1,12 +1,12 @@
 {
   "name": "linear-search",
   "version": "1.0.0",
-  "description": "",
+  "description": "Linear Search example with NodeJS.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Lakshan Rajasuriya",
   "license": "ISC"
 }

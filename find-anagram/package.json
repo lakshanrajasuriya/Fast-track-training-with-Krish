@@ -1,12 +1,12 @@
 {
   "name": "find-anagram",
   "version": "1.0.0",
-  "description": "",
+  "description": "Find if the second word is an anagram of first word.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Lakshan Rajasuriya",
   "license": "ISC"
 }

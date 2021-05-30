@@ -4,7 +4,7 @@ const findNumber = (sequence) => {
     let max = sequence[0]; // For maximum value
     const length = sequence.length; // For the length of sequence
 
-    // Count the total of the sequence
+    // To get the actual total of the sequence
     sequence.forEach((item) => {
 
         if (item > max)
@@ -17,7 +17,7 @@ const findNumber = (sequence) => {
     let count = min;
     let total_2 = 0 // For expected total
 
-    // Count expected total
+    // To get the expected  total
     while (count <= max) {
         total_2 += count;
         count++;

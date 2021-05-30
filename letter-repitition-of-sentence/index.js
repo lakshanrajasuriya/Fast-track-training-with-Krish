@@ -1,7 +1,6 @@
-const { letterCount } = require('./wordLib')
+const { letterCount } = require('./letter')
 
 const sentence = "Please find it";
 
-// Get letter count
 const count = letterCount(sentence);
 console.log(count);

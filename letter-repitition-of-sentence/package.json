@@ -1,12 +1,12 @@
 {
-  "name": "word-repitition-of-sentence",
+  "name": "letter-repitition-of-sentence",
   "version": "1.0.0",
-  "description": "",
+  "description": "Find the repitition of each letter from a given sentence.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Lakshan Rajasuriya",
   "license": "ISC"
 }

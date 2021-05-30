@@ -3,7 +3,8 @@ const findNumber = (items) => {
     for (let i = 0; i < 3; i++) {
         for (let j = i + 1; j < items.length; j++) {
             if (items[i] < items[j]) {
-                // Swap element
+                
+                // To swap elements
                 [items[i], items[j]] = [items[j], items[i]]
             }
         }
