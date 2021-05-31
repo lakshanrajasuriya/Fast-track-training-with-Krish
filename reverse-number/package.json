@@ -1,5 +1,5 @@
 {
-  "name": "reverse-a-number",
+  "name": "reverse-number",
   "version": "1.0.0",
   "description": "Reverse a number.",
   "main": "index.js",
