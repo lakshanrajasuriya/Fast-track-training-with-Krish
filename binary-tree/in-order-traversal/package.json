@@ -1,0 +1,12 @@
+{
+  "name": "in-order-traversal",
+  "version": "1.0.0",
+  "description": "Inorder traversal of a tree.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Lakshan Rajasuriya",
+  "license": "ISC"
+}
