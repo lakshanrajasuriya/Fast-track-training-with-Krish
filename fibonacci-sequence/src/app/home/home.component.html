@@ -9,7 +9,7 @@
             <label for="">Please enter a number</label>
         </div>
         <div class="col-lg-2">
-            <input type="number" [(ngModel)]="number">
+            <input type="number" [(ngModel)]="inputValue" (input)="message=''">
         </div>
         <div class="col-lg-4">
             <p>{{message}}</p>
