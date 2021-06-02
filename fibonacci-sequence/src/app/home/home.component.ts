@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  inputValue: number = 0; // To check fibonacci sequence
+  private _inputValue: number = 0; // To check fibonacci sequence
   message: string = ''; // To print the message
 
   constructor() { }
@@ -14,7 +14,15 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  findFibonacci() {
+  set inputValue(value: number) {
+    this._inputValue = value;
+  }
+
+  get inputValue(): number {
+    return this._inputValue;
+  }
+
+  findFibonacci(): void {
 
     let sequence = [0]; // To store fibonacci sequence
     let index = 0; // To get the current index of sequence
@@ -31,7 +39,7 @@ export class HomeComponent implements OnInit {
     }
 
     if (sequence[index] == this.inputValue)
-      this.message = index + ' index in fibonacci sequence'
+      this.message = 'index ' + index + ' in fibonacci sequence'
     else
       this.message = 'Not in fibonacci sequence!'
   }
