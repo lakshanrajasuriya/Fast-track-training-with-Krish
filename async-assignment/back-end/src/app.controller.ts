@@ -18,7 +18,7 @@ export class AppController {
   }
 
   @Post('/occurance')
-  getOccurance(@Body() request): Promise<any[]> {
+  getOccurance(@Body() request): Promise<string[]> {
 
     return this.appService.letterCount(request.sentance)
   }
