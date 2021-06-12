@@ -23,7 +23,7 @@ export class AppService {
 
     let result = sortedText_1 === sortedText_2 ? "Second word is an Anagram" : "Second word is not an Anagram!";
 
-    return `{"message":"${result}"}`;
+    return JSON.stringify(result);
   }
 
   // With promises

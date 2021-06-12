@@ -29,7 +29,7 @@ export class AnagramComponent implements OnInit {
 
     this.dataService.checkAnagram({ text1, text2 }).subscribe({
       next: (data: any) => {
-        this.message = data.message;
+        this.message = data;
       },
       error: error => {
         console.log('Error: ', error)
