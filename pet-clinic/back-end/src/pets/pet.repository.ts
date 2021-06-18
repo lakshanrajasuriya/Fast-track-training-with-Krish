@@ -26,14 +26,9 @@ export class PetRepository {
     }
 
     async update(id: string, petCreateDto: PetCreateDto): Promise<Pet> {
-        const { name, age, breed, color } = petCreateDto;
 
-        return await this.petModel.findOne({ _id: id })
+        return await this.petModel.findByIdAndUpdate({ _id: id }, { $set: petCreateDto }, { useFindAndModify: false })
             .then(pet => {
-                pet.name = name;
-                pet.age = age;
-                pet.breed = breed;
-                pet.color = color;
                 return pet.save();
             })
             .catch(error => {
