@@ -10,19 +10,22 @@
             <form [formGroup]="petForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
                     <label for="name">Name of the Pet</label>
-                    <input class="form-control" type="text" id="name" formControlName="name" placeholder="Ex: Rex">
+                    <input class="form-control" type="text" id="name" formControlName="name" placeholder="Ex: Rex"
+                        required>
                 </div>
                 <div class="form-group">
                     <label for="age">Age</label>
-                    <input class="form-control" type="number" id="age" min="1" formControlName="age">
+                    <input class="form-control" type="number" id="age" min="1" formControlName="age" required>
                 </div>
                 <div class="form-group">
                     <label for="breed">Breed</label>
-                    <input class="form-control" type="text" id="breed" formControlName="breed" placeholder="Great Dane">
+                    <input class="form-control" type="text" id="breed" formControlName="breed"
+                        placeholder="Ex: Great Dane" required>
                 </div>
                 <div class="form-group">
                     <label for="color">Color</label>
-                    <input class="form-control" type="text" id="color" formControlName="color" placeholder="White">
+                    <input class="form-control" type="text" id="color" formControlName="color" placeholder="Ex: White"
+                        required>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-warning">Update</button>

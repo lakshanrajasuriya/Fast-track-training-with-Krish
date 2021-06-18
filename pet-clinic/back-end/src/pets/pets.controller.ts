@@ -23,6 +23,7 @@ export class PetsController {
     }
 
     @Put('/:id')
+    @UsePipes(ValidationPipe)
     updatePet(@Body() petCreateDto: PetCreateDto, @Param('id') id: string) {
         return this.petsService.updatePet(id, petCreateDto);
     }

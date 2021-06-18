@@ -15,11 +15,11 @@ export class PetsService {
     }
 
     createPet(petCreateDto: PetCreateDto) {
-        this.petRepository.create(petCreateDto);
+        return this.petRepository.create(petCreateDto);
     }
 
     updatePet(id: string, petCreateDto: PetCreateDto) {
-        this.petRepository.update(id, petCreateDto);
+        return this.petRepository.update(id, petCreateDto);
     }
 
     findAndDelete(id: string) {

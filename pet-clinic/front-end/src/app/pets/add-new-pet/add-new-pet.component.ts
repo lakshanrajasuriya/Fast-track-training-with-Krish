@@ -30,6 +30,14 @@ export class AddNewPetComponent implements OnInit {
   }
 
   onSubmit(): void {
+    if (this.petForm.status === "VALID") {
+      this.addNewRecord();
+    } else {
+      this.toastr.error('Please complete the form before submit', 'Error!')
+    }
+  }
+
+  addNewRecord(): void {
     const pet = this.petForm.getRawValue();
 
     this.petService.createPet(pet).subscribe({

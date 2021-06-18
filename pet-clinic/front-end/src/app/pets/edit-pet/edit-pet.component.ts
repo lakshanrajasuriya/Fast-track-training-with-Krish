@@ -48,6 +48,14 @@ export class EditPetComponent implements OnInit, OnDestroy {
   }
 
   onSubmit(): void {
+    if (this.petForm.status === "VALID") {
+      this.updateData();
+    } else {
+      this.toastr.error('Please complete the form before submit', 'Error!')
+    }
+  }
+
+  updateData(): void {
     const pet = this.petForm.getRawValue();
 
     this.petService.updatePet(this.petId, pet).subscribe({
