@@ -1,0 +1,52 @@
+type Car{
+    id:ID!
+    firstName:String!
+    lastName:String!
+    email:String!
+    carMake:String!
+    carModel:String!
+    vin:String!
+    manufacturedDate:String!
+    age:Int!
+}
+
+type CardataConn{
+    nodes:[Car!]!
+    totalCount:Int!
+}
+
+type Query{
+    getAllCarsFilteredAsc(first:Int!,offset:Int!,orderBy:String!,carModel:String!):CardataConn!
+    getAllCars: [Car!]!
+    getACar(id:Int!):Car!
+}
+
+type Mutation{
+    createNewCar(car: CarCreateDTO!): Car!
+    updateCar(car:CarUpdateDTO!):Car!
+    deleteCar(id:Int!):Car!
+}
+
+
+input CarCreateDTO {
+  id: Int!
+  firstName: String!
+  lastName: String!
+  email: String!
+  carMake: String!
+  carModel: String!
+  vin: String!
+  manufacturedDate: String!
+  age: Int
+}
+
+
+input CarUpdateDTO {
+  id: Int!
+  firstName: String!
+  lastName: String!
+  email: String!
+  carMake: String!
+  carModel: String!
+  vin: String!
+}

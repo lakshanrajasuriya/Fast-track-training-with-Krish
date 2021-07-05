@@ -1,10 +1,11 @@
 export class CarCreateDTO {
     id: number
-    first_name: string
-    last_name: string
+    firstName: string
+    lastName: string
     email: string
-    car_make: string
-    car_model: string
-    vin_number: string
-    manufactured_date: Date
+    carMake: string
+    carModel: string
+    vin: string
+    manufacturedDate: Date
+    age: number
 }

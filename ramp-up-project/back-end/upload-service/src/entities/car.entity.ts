@@ -7,23 +7,26 @@ export class Car {
     id: number
 
     @Column()
-    first_name: string
+    firstName: string
 
     @Column()
-    last_name: string
+    lastName: string
 
     @Column()
     email: string
 
     @Column()
-    car_make: string
+    carMake: string
 
     @Column()
-    car_model: string
+    carModel: string
 
     @Column()
-    vin_number: string
+    vin: string
 
     @Column()
-    manufactured_date: Date
+    manufacturedDate: Date
+
+    @Column()
+    age: number
 }

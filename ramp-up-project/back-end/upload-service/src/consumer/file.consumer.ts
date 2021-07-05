@@ -16,15 +16,17 @@ export class FileConsumer {
 
             for (let row in rows) {
                 if (Number(row) != 0) {
+                    let age = new Date().getFullYear() - new Date(rows[row][7]).getFullYear();
                     let car = {
                         id: rows[row][0],
-                        first_name: rows[row][1],
-                        last_name: rows[row][2],
+                        firstName: rows[row][1],
+                        lastName: rows[row][2],
                         email: rows[row][3],
-                        car_make: rows[row][4],
-                        car_model: rows[row][5],
-                        vin_number: rows[row][6],
-                        manufactured_date: rows[row][7]
+                        carMake: rows[row][4],
+                        carModel: rows[row][5],
+                        vin: rows[row][6],
+                        manufacturedDate: rows[row][7],
+                        age: age
                     }
                     this.carService.create(car);
                 }
