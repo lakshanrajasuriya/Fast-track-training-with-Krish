@@ -20,8 +20,8 @@ export class VehiclesComponent implements OnInit {
   }
 
   onLoadData(): void {
-    this.vehicleService.getVehicle()
-      .valueChanges
+    this.vehicleService.getAllVehicles()
+
       .subscribe(({ data, loading }) => {
         console.log(loading);
         this.cars = data.getAllCars;
