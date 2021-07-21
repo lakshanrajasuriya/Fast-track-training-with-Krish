@@ -50,6 +50,7 @@ export interface IQuery {
     getAllCarsFilteredAsc(first: number, offset: number, orderBy: string, carModel: string): CardataConn | Promise<CardataConn>;
     getAllCars(): Car[] | Promise<Car[]>;
     getACar(id: number): Car | Promise<Car>;
+    searchByModel(model: string): Car | Promise<Car>;
 }
 
 export interface IMutation {

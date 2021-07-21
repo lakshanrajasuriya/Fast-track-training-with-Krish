@@ -19,6 +19,7 @@ type Query{
     getAllCarsFilteredAsc(first:Int!,offset:Int!,orderBy:String!,carModel:String!):CardataConn!
     getAllCars: [Car!]!
     getACar(id:Int!):Car!
+    searchByModel(model:String!):Car!
 }
 
 type Mutation{

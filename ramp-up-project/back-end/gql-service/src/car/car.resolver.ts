@@ -23,6 +23,11 @@ export class CarResolver {
         return this.carService.findOne(id);
     }
 
+    @Query(() => Car, { name: 'searchByModel' })
+    searchByModel(@Args('model') model: string) {
+        return this.carService.searchByModel(model);
+    }
+
     @Mutation(() => Car, { name: 'createNewCar' })
     create(@Args('car') car: CarCreateDTO) {
         return this.carService.create(car);

@@ -53,6 +53,21 @@ query($id:Int!){
   }
 }`
 
+export const QUERY_GET_CAR_BY_MODEL = gql`
+query($model:String!){
+  carById(model: $model) {
+    id
+    firstName
+            lastName
+            email
+            carMake
+            carModel
+            vin
+            manufacturedDate
+            age
+  }
+}`
+
 export const MUTATION_UPDATE_CAR = gql`
   mutation(
   $id:Int!
